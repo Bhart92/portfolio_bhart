@@ -1,0 +1,26 @@
+.loader-hidden {
+    display: none;
+  }
+  .loader{
+    z-index: 9;
+  }
+  .loader-active {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+  .loading-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .loading-page p{
+    color: $blue;
+  }
+  .ball-grid-pulse > div{
+    background: $blue;
+  }

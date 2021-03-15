@@ -1,0 +1,110 @@
+
+.header--container{
+    grid-area: header;
+    transform: translate(0%, 100%);
+    position: relative;
+    z-index: 100;
+}
+.header{
+    background: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 20px 50px 0;
+}
+.header--image{
+    opacity: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: center;
+    width: 100%;
+    transform: translate(0, 100%)
+}
+.header--image a h1{
+    border: 3px solid white;
+    display: inline-block;
+    font-size: 5rem;
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+    transition: all .35s ease;
+    span{
+        color: $red;
+        transition: all .35s ease;
+    }
+    &:hover{
+        color:$red;
+        border: 3px solid $blue;
+        span{
+            color: $blue;
+        }
+    }
+}
+.header--image--h2{
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+}
+.header--image--h2 span{
+    font-size: 1.75rem;
+    font-weight: 300;
+    &:first-of-type{
+        font-size: unset;
+    }
+}
+.header--mid-container{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 52%;
+    justify-content: center;
+    width: 100%;
+}
+.header--mid-container ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    li{
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+}
+.header--bottom-container{
+    height: 5%;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    a{
+        transform: translate(0, 15px);
+        opacity: 0;
+    }
+}
+.header--mobile-nav-bottom-container{
+    height: 75%;
+}
+.header--mobile-nav-mid-container h1{
+    border: 5px solid $off-white;
+    font-size: 6rem;
+    padding: 10px 35px;
+    margin: unset;
+}
+.mobile{
+    display: none;
+    @extend .header--bottom-container;
+}
+.mobile a h1{
+    border: 5px solid $off-white;
+    font-size: 3rem;
+    padding: 0px 15px;
+}
+.bm-item ul li a {
+    font-size: 2.5rem;
+}
+
+

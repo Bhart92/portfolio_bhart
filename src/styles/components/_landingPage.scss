@@ -1,0 +1,54 @@
+.landing-page{
+    align-items: center;
+    color:$dark-grey;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 80%;
+}
+.landing-page--container{
+    overflow: hidden;
+    padding: 15px;
+}
+.landing-page--hero-box{
+    opacity: 0;
+    position: relative;
+    top: 5px;
+}
+
+.landing-page--title{
+    font-size: 4.5rem;
+    line-height: .85;
+    padding: 0;
+    padding-left: 3px;
+    margin: 0;
+    span{
+        color: $red;
+    }
+}
+.landing-page--subtitle{
+    font-size: 2.5rem;
+    padding-left: 2px;
+    margin: 0;
+}
+.landing-page--button-box{
+    align-items: flex-start;
+    display: flex;
+    height: 20%;
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 65%;
+}
+.fadeUp{
+    opacity: 1;
+    top: 0px;
+    transition: opacity .75s ease-in, top .8s ease-in;
+    transition-delay: .25s;
+}
+
+@media (max-width: 769px){
+    .landing-page--container {
+        width: 100%;
+    }
+}

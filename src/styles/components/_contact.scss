@@ -1,0 +1,16 @@
+.contact-container{
+    align-items: center;
+    color: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 101px);
+    justify-content: space-evenly;
+    width: 100%;
+}
+.contact-container--title__span{
+    color: $red;
+}
+.fade-out{
+    opacity: 0;
+}
+

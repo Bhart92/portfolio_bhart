@@ -1,0 +1,120 @@
+.projects{
+    height: 100%;
+}
+.projects--container{
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    height: auto;
+    position: relative;
+    margin: 0 auto 5rem auto;
+    &:nth-of-type(even){
+        flex-direction: row;
+        .projects-details{
+            align-items: flex-end;
+            padding-right: 2rem;
+            .projects--title{
+                text-align: right;
+            }
+            .projects--tech{
+                &:after{
+                    position: absolute;
+                    right: 0
+                }
+            }
+        }
+        .projects--image a img{
+            width: 100%;
+        }
+    }
+}
+.projects--container hr{
+    background-color: rgba(183,113,98,.35);
+    border: 1px solid rgba(183,113,98,.35);
+    bottom: 0;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    right: 35%;
+    outline: rgba(183,113,98,.35);
+    width: 35%;
+}
+.projects--title{
+    width: 100%;
+}
+.projects--title__link{
+    color: $dark-grey;
+    transition: .25s all ease-in-out;
+    &:hover{
+        color: $red;
+    }
+}
+.projects--image-container{
+    align-items: center;
+    align-self: flex-start;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    flex-basis: 55%;
+    margin: 10em 0;
+    a{
+        width: 80%;
+        img{
+            width: 100%;
+            max-width: 605px;
+            min-height: 340px;
+            max-height: 340px;
+        }
+    }
+
+}
+.projects--image--link{
+    position: relative;
+    z-index: 10;
+    min-width: 450px;
+    height: auto;
+}
+.projects--image--link,
+.projects--image{
+    width: 95%;
+}
+.projects--image{
+text-indent:-9999px;
+position: relative;
+opacity: 0;
+top: 5px;
+transition: all .35s ease;
+}
+
+.projects-details{
+    align-items: flex-start;
+    color: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 45%;
+}
+.projects--description{
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    text-align: justify;
+    word-break: break-word;
+    margin-top: 5px
+}
+.projects--tech{
+    color: $blue;
+    font-weight: 300;
+    position: relative;
+    &:after{
+        display: block;
+        content: ' ';
+        background: $red;
+        height: 2px;
+        margin-bottom: 5px;
+        width: 25%;
+    }
+}
