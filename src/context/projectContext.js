@@ -27,7 +27,7 @@ const projects = [
 		url: 'https://playcanv.as/p/rBBxLXxj/',
 		tech: 'PlayCanvas',
 		platform: 'Mobile Only',
-		marker: 'https://lh3.googleusercontent.com/proxy/EbI2qC6E1sHqIGoAPoOBpno4RpRP9cwBf5C560b5vvtrXJyuT1IzQEpSkNffqDP5cICKwZdkG7pObyG6qZOmU4tm7cmtx8PhzqzKA10Xqz-SP_JcNW2vlMMTfY9SnMg',
+		marker: './images/marker.PNG',
 	},
 	{
 		title: 'Fractality',
