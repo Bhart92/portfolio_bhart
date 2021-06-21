@@ -23,6 +23,7 @@
                     right: 0
                 }
             }
+
         }
         .projects--image a img{
             width: 100%;
@@ -63,7 +64,7 @@
         width: 80%;
         img{
             width: 100%;
-            max-width: 605px;
+            max-width: 800px;
             min-height: 340px;
             max-height: 340px;
         }
@@ -95,6 +96,22 @@ transition: all .35s ease;
     flex-direction: column;
     justify-content: center;
     flex-basis: 45%;
+    .projects--platform{
+        color: red;
+        margin-top: 10px;
+    }
+    .projects--marker{
+        font-size: 1.05rem;
+        color: red;
+    }
+    .projects--marker-link{
+        margin-top: 1px;
+        color: $blue;
+        transition: .35s all ease;
+        &:hover{
+            color: red;
+        }
+    }
 }
 .projects--description{
     font-weight: 500;

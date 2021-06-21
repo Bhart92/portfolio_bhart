@@ -1,4 +1,4 @@
-import React, {useContext, useLayoutEffect} from 'react';
+import React, {Fragment, useContext, useLayoutEffect} from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProjectContext from '../context/projectContext';
@@ -60,6 +60,14 @@ const ProjectPageList = () => {
                 <h1 className='projects--title'><a className='projects--title__link' href={projects.url}>{projects.title}</a></h1>
                 <span className='projects--tech'>{projects.tech}</span>
                 <p className='projects--description'>{projects.description}.</p>
+                {projects.marker && (
+                    <Fragment>
+                        <span className='projects--platform'>{projects.platform}</span>
+                        <span className='projects--marker'>Marker is required for AR projects.</span>
+                        <span className='projects--marker'>Please print, or open marker on another device - then open app and point camera at marker.</span>
+                        <a className='projects--marker-link' target='_blank' href={projects.marker}>Open Marker Here</a>
+                    </Fragment>
+                )}
             </div>
             <div className='projects--image-container'>
                 <a href={projects.url}><img className='projects--image' src={projects.image} alt={projects.imageAlt}/></a>
