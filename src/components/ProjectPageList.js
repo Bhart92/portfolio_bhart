@@ -70,7 +70,7 @@ const ProjectPageList = () => {
                 )}
             </div>
             <div className='projects--image-container'>
-                <a href={projects.url}><img className='projects--image' src={projects.image} alt={projects.imageAlt}/></a>
+                <a href={projects.url}><img className={projects.marker ? 'projects--image ar' : 'projects--image'} src={projects.image} alt={projects.imageAlt}/></a>
             </div>
             <hr />
         </div>

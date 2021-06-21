@@ -60,13 +60,20 @@
     position: relative;
     flex-basis: 55%;
     margin: 10em 0;
+    align-items: center;
     a{
         width: 80%;
+        display: flex;
+        align-items: center;
         img{
             width: 100%;
-            max-width: 800px;
+            max-width: 605px;
             min-height: 340px;
             max-height: 340px;
+        }
+        img.ar{
+            width: 50%;
+            margin: 0 auto;
         }
     }
 

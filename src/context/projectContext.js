@@ -21,7 +21,7 @@ const projects = [
 	{
 		title: 'AR Buddy',
 		description: 'An AR buddy to keep users company! Built with PlayCanvas and currently being improved upon. Current iteration allows users to interact with desktop buddy via swipe input. Features to come include voice input, motivational dialog, and variety of animations between swipe inputs',
-		image: '/images/buddy.PNG',
+		image: '/images/buddy.jpg',
 		imageStatus: false,
 		imageAlt: 'Desktop Buddy AR',
 		url: 'https://playcanv.as/p/rBBxLXxj/',
