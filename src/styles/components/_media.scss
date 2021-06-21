@@ -426,7 +426,10 @@
         }
     }
     .projects--image-container a {
-        width: 75%;
+        justify-content: center;
+    }
+    .projects--marker{
+        text-align: center;
     }
     .about-section-text-container div {
         width: 85%;

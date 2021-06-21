@@ -65,7 +65,8 @@ const ProjectPageList = () => {
                         <span className='projects--platform'>{projects.platform}</span>
                         <span className='projects--marker'>Marker is required for AR projects.</span>
                         <span className='projects--marker'>Please print, or open marker on another device - then open app and point camera at marker.</span>
-                        <a className='projects--marker-link' target='_blank' href={projects.marker}>Open Marker Here</a>
+                        <a className='projects--marker-link' target='_blank' href={projects.marker} download>Open Marker Here</a>
+
                     </Fragment>
                 )}
             </div>
